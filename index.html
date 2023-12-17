@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern bakery</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
@@ -23,12 +24,14 @@
     </header>
     <main>
       <section><h1>Modern bakery</h1></section>
-      <section id="traditions-section">
+      <section>
         <ul>
           <li>Great demand on the market</li>
           <li>Budget-friendly formats</li>
           <li>Experienced management team</li>
         </ul>
+      </section>
+      <section id="traditions-section">
         <h2>New format of traditions</h2>
         <p>
           <span>Shop bakery</span> — this is a bakery that took all the best and
@@ -82,21 +85,94 @@
       </section>
       <section id="formats">
         <h2>Formats</h2>
+        <button type="button">
+          <svg class="icon-arrow" width="32" height="32">
+            <use href="./images/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
         <ul>
           <li>
-            <article><h3>Walrus</h3></article>
+            <article>
+              <h3>Walrus</h3>
+              <ul>
+                <li>Area: up to 120 m2</li>
+                <li>Menu: advanced menu</li>
+                <li>
+                  Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 general
+                  waiters
+                </li>
+                <li>Seats: available</li>
+              </ul>
+            </article>
           </li>
           <li>
-            <article><h3>Horseshoe</h3></article>
+            <article>
+              <h3>Horseshoe</h3>
+              <ul>
+                <li>Area: up to 25 m2</li>
+                <li>Menu: the most popular menu items</li>
+                <li>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</li>
+                <li>Seats: none</li>
+              </ul>
+            </article>
           </li>
           <li>
-            <article><h3>Handlebar</h3></article>
+            <article>
+              <h3>Handlebar</h3>
+              <ul>
+                <li>Area: up to 15 m2</li>
+                <li>Menu: the most popular menu items</li>
+                <li>Staff: 1 salesperson, 1 baker, 1 baker's assistant</li>
+                <li>Seats: none</li>
+              </ul>
+            </article>
           </li>
         </ul>
+        <button type="button">
+          <svg class="icon-arrow" width="32" height="32">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
       </section>
       <section id="join">
         <h2>Join the chain of bakeries</h2>
         <p>Fill out the form so we can contact you!</p>
+        <form name="contact-form">
+          <label for="contact-form-user-name">Name</label>
+          <input
+            type="text"
+            id="contact-form-user-name"
+            name="contact-form-user-name"
+            placeholder="Your name"
+            required
+          />
+          <label for="contact-form-phone">Phone number</label>
+          <input
+            type="tel"
+            id="contact-form-phone"
+            name="contact-form-phone"
+            placeholder="+1 341 223 4747"
+            pattern="\+[0-9]{12}"
+            required
+          />
+          <label for="contact-form-email">Email</label>
+          <input
+            type="email"
+            id="contact-form-email"
+            name="contact-form-email"
+            placeholder="example@email.co"
+            required
+          />
+        </form>
+        <button type="submit">Call Back</button>
+        <p>By clicking the button, I agree to the</p>
+        <a href="#">privacy policy</a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1009.5987851659181!2d30.489540296479348!3d50.457275566585466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1702810269473!5m2!1sru!2sua"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
     <footer>
@@ -125,18 +201,18 @@
             </a>
           </li>
           <li>
-            <a href="#" targer="_blank">
+            <a href="#" target="_blank">
               <img
                 src="./images/facebook_black_logo_icon_147136 1.svg"
-                alt="Facebook"
+                alt="Facebook link"
               />
             </a>
           </li>
           <li>
-            <a href="#" targer="_blank">
+            <a href="#" target="_blank">
               <img
                 src="./images/instagram_black_logo_icon_147122 1.svg"
-                alt="Instagram"
+                alt="Instagram link"
               />
             </a>
           </li>
