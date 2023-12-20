@@ -1,1 +1,192 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
+/* Variables */
+
+:root {
+  --color-primary-dark: #465929;
+  --color-primary-light: #819b57;
+  --color-edition: #a18268;
+  --color-text-main: #31261a;
+  --color-reverse: #faf4ea;
+}
+
+/* Base */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+a {
+  display: inline-block;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Buttons */
+
+.button-main {
+  flex-shrink: 0;
+  padding: 16px 32px;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--color-primary-light);
+  color: var(--color-reverse);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-main:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Header */
+
+.header-position {
+  position: relative;
+}
+
+.header,
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+  gap: 70px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 100%;
+  gap: 70px;
+}
+
+.menu a {
+  color: var(--color-reverse);
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: var(--color-primary-light);
+}
+
+/* main section */
+
+.wrapper-section-hero {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    linear-gradient(
+      103deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-hero {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.header-hero {
+  color: var(--color-reverse);
+  font-size: 148px;
+  font-weight: 600;
+  padding: auto, auto;
+  margin-bottom: 0;
+  margin: auto;
+}
+
+.header-hero span {
+  color: var(--color-primary-light);
+}
